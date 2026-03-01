@@ -25,7 +25,7 @@
 
             .grid1 {
                 display: grid;
-                background-image: url("FundoMadeira.png");
+                background-color: black;
                 grid-template-columns: 2fr 5fr 2fr;
                 grid-template-rows: 300px;
                 justify-items: center;
@@ -33,90 +33,83 @@
             }
 
             #titulo {
-                background-color: rgb(27, 148, 152);
                 padding: 24px;
                 font-weight: bold;
                 position: absolute;
                 top: 400px;
                 height: 50px;
                 width: 1000px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .header {
+                text-decoration: underline;
+                font-size: 90px;
+            }
+
+            .paragraph {
+                font-size: 28px;
+                text-align: center;
             }
 
             #subtitulo {
-                background-color: rgb(127, 152, 27);
                 padding: 24px;
                 font-weight: bold;
                 position: absolute;
                 top: 500px;
-                height: 200px;
+                height: 170px;
                 width: 1000px;
-            }
-
-            #item1 {
-                background-color: rgb(27, 94, 152);
-                padding: 24px;
-                font-weight: bold;
-                height: 320px;
-                width: 320px;
-                margin: 1%;
-                margin-top: 500px;
-            }
-
-            #item2 {
-                background-color: rgb(152, 27, 90);
-                padding: 24px;
-                font-weight: bold;
-                height: 320px;
-                width: 320px;
-                margin: 1%;
-                margin-top: 500px;
-            }
-
-            #item3 {
-                background-color: rgb(152, 94, 27);
-                padding: 24px;
-                font-weight: bold;
-                height: 320px;
-                width: 320px;
-                margin: 1%;
-                margin-top: 500px;
-            }
-
-            #item4 {
-                background-color: rgb(27, 94, 152);
-                padding: 24px;
-                font-weight: bold;
-                height: 320px;
-                width: 320px;
-                margin: 1%;
-            }
-
-            #item5 {
-                background-color: rgb(152, 27, 90);
-                padding: 24px;
-                font-weight: bold;
-                height: 320px;
-                width: 320px;
-                margin: 1%;
-            }
-
-            #item6 {
-                background-color: rgb(152, 94, 27);
-                padding: 24px;
-                font-weight: bold;
-                height: 320px;
-                width: 320px;
-                margin: 1%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             .flexbox1 {
                 display: flex;
-                background-image: url("Fundo.png");
+                background-color: white;
                 justify-content: space-around;
                 padding: 24px;
-                height: 1400px;
-                align-items:center;
+                height: 1000px;
                 flex-wrap: wrap;
+            }
+
+            .item {
+                padding: 24px;
+                font-weight: bold;
+                height: 320px;
+                width: 320px;
+                margin-top: 450px;
+            }
+
+            .produtos {
+                height: 100%;
+                width: 100%;
+                border: 1px transparent;
+                border-radius: 8px;
+            }
+
+            .desc {
+                padding: 24px;
+                font-weight: bold;
+                height: 100px;
+                width: 320px;
+                text-align: center;
+            }
+
+            .hdesc {
+                font-size: 30px;
+                margin-top: -50px;
+                border: 1px solid;
+                border-radius: 8px;
+            }
+
+            .pdesc {
+                font-size: 20px;
+                margin-top: -20px;
+                border: 1px solid;
+                border-radius: 8px;
             }
         </style>
     </head>
@@ -124,20 +117,35 @@
 
         <div class = "grid1">
             <div id = "login"> <p class = loginText>Olá, DinoFan#10</p> </div>
-            <div id = "logo"> <img src="Logo1.png" alt="Logo da loja Dinovo" height="250vh"/> </div>
+            <div id = "logo"> <img src="LogoM.png" alt="Logo da loja Dinovo" height="250vh"/> </div>
             <div id = "carrinho"> <img src="Ninho.png" alt="Carrinho na forma de um ninho vazio" height="80vh"/> </div>   
         </div>
 
           
         <div class = "flexbox1">
-            <div id = "titulo"> </div>
-            <div id = "subtitulo"> </div>
-            <div id = "item1">  </div>
-            <div id = "item2"> </div>
-            <div id = "item3"> </div>
-            <div id = "item4">  </div>
-            <div id = "item5"> </div>
-            <div id = "item6"> </div>
+            <div id = "titulo"> <h1 class = "header">Sempre à frente do tempo</h1></div>
+            <div id = "subtitulo">
+                <p class = paragraph>
+                    Somos uma empresa que ajuda pessoas e empresas que precisam, gostam ou desejam possuir um animal pré-histórico a realizar seus sonhos!
+                    Há mais de 40 anos damos vida às criaturas mais fascinantes que a Terra já produziu, tendo grande destaque no mundo cinematográfio com participação
+                    em filmes como Kink Kong e a franquia mundialmente conhecida Jurassic Park. Agora, você também pode adquirir o seu próprio ser pré-histórico e fazer parte da história!  
+                </p>
+            </div>
+            <div class = "item"> <img class = "produtos" src="Braquiossauro.png" alt="Ovo de braquiossauro"></div>
+            <div class = "item"> <img class = "produtos" src="Velociraptor.png" alt="Ovo de braquiossauro"></div>
+            <div class = "item"> <img class = "produtos" src="Tricerátops.png" alt="Ovo de braquiossauro"></div>
+            <div class = "desc"> 
+                <h3 class = "hdesc">Braquiossauro</h3>
+                <p class = "pdesc">Herbívoro, Comprimento: 18-22m, Período: Jurássico Superior, Localização: EUA</p>
+            </div>
+            <div class = "desc"> 
+                <h3 class = "hdesc">Velociraptor</h3>
+                <p class = "pdesc">Carnívoro, Comprimento: 1,5-2m, Período: Cretáceo Superior, Localização: Mongólia</p>
+            </div>
+            <div class = "desc"> 
+                <h3 class = "hdesc">Tricerátops</h3>
+                <p class = "pdesc">Herbívoro, Comprimento: 7,9-9m, Período: Cretáceo Superior, Localização: EUA e Canadá</p>
+            </div>            
         </div>
         
     </body>
