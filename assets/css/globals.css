@@ -1,1 +1,132 @@
 /* Estilos css aqui! */
+
+.grid {
+    display: grid;
+    background-color: black;
+    grid-template-columns: 2fr 5fr 2fr;
+    grid-template-rows: 300px;
+    justify-items: center;
+    align-items: center;
+}
+    #login {
+        text-align: center;
+        font-size: 30px;
+    }
+
+        .loginText {
+            color:hsl(0, 7%, 83%);
+        }
+
+    #logo {
+        text-align: center;
+    }
+
+    #carrinho {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+        #numeroCarrinho {
+            background-color: white;
+            border: 1px white;
+            border-radius: 8px;
+        }
+
+.flexbox {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+    padding: 24px;
+    height: 1000px;
+    flex-wrap: wrap;
+}
+
+    #titulo {
+        padding: 24px;
+        font-weight: bold;
+        position: absolute;
+        top: 400px;
+        height: 50px;
+        width: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .header {
+            text-decoration: underline;
+            font-size: 90px;
+        }
+
+    #subtitulo {
+        padding: 24px;
+        font-weight: bold;
+        position: absolute;
+        top: 500px;
+        height: 170px;
+        width: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .paragraph {
+            font-size: 28px;
+            text-align: center;
+        }
+
+    .item {
+        padding: 24px;
+        font-weight: bold;
+        height: 320px;
+        width: 320px;
+        margin-top: 450px;
+    }
+
+        .produtos {
+            height: 100%;
+            width: 100%;
+            border: 1px transparent;
+            border-radius: 8px;
+        }
+
+    .box {
+        border: 1px solid black;
+        border-radius: 8px;
+        height: 560px;
+        margin-top: -370px;
+    }
+
+        .desc {
+            padding: 24px;
+            font-weight: bold;
+            height: 100px;
+            width: 320px;
+            text-align: center;
+        }
+
+            .hdesc {
+                font-size: 30px;
+                margin-top: 340px;
+            }
+
+            .pdesc {
+                font-size: 20px;
+                margin-top: -20px;
+            }
+            
+    button {
+        font-size: 30px;
+        margin-top: 5px;
+        width: 200px;
+        border: 1px solid hsl(113, 69%, 22%);
+        background-color: hsl(113,69%, 50%);
+        border-radius: 8px;
+        font-family:'Courier New', Courier, monospace;
+    }
+
+        button:hover {
+            background-color: hsl(113,69%, 40%);
+        }

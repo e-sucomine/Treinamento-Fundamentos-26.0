@@ -5,125 +5,24 @@
     <head>
         <meta charset="UTF-8"/>
         <title>DinOvo Store</title>
-        <style>
-            #login {
-                text-align: center;
-                font-size: 30px;
-            }
-
-            .loginText {
-                color:hsl(0, 7%, 83%);
-            }
-
-            #logo {
-                text-align: center;
-            }
-
-            #carrinho {
-                text-align: center;
-            }
-
-            .grid1 {
-                display: grid;
-                background-color: black;
-                grid-template-columns: 2fr 5fr 2fr;
-                grid-template-rows: 300px;
-                justify-items: center;
-                align-items: center;
-            }
-
-            #titulo {
-                padding: 24px;
-                font-weight: bold;
-                position: absolute;
-                top: 400px;
-                height: 50px;
-                width: 1000px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .header {
-                text-decoration: underline;
-                font-size: 90px;
-            }
-
-            .paragraph {
-                font-size: 28px;
-                text-align: center;
-            }
-
-            #subtitulo {
-                padding: 24px;
-                font-weight: bold;
-                position: absolute;
-                top: 500px;
-                height: 170px;
-                width: 1000px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-
-            .flexbox1 {
-                display: flex;
-                background-color: white;
-                justify-content: space-around;
-                padding: 24px;
-                height: 1000px;
-                flex-wrap: wrap;
-            }
-
-            .item {
-                padding: 24px;
-                font-weight: bold;
-                height: 320px;
-                width: 320px;
-                margin-top: 450px;
-            }
-
-            .produtos {
-                height: 100%;
-                width: 100%;
-                border: 1px transparent;
-                border-radius: 8px;
-            }
-
-            .desc {
-                padding: 24px;
-                font-weight: bold;
-                height: 100px;
-                width: 320px;
-                text-align: center;
-            }
-
-            .hdesc {
-                font-size: 30px;
-                margin-top: -50px;
-                border: 1px solid;
-                border-radius: 8px;
-            }
-
-            .pdesc {
-                font-size: 20px;
-                margin-top: -20px;
-                border: 1px solid;
-                border-radius: 8px;
-            }
-        </style>
+        <link rel="stylesheet" href="./assets/css/globals.css">
     </head>
     <body>
 
-        <div class = "grid1">
+        <div class = "grid">
             <div id = "login"> <p class = loginText>Olá, DinoFan#10</p> </div>
             <div id = "logo"> <img src="LogoM.png" alt="Logo da loja Dinovo" height="250vh"/> </div>
-            <div id = "carrinho"> <img src="Ninho.png" alt="Carrinho na forma de um ninho vazio" height="80vh"/> </div>   
+            <div id = "carrinho"> 
+                <img src="Carrinho2.jpg" alt="Carrinho de compras" height="80vh"/>
+                <p id = "numeroCarrinho">0</p>
+            </div>   
         </div>
 
           
-        <div class = "flexbox1">
+        <div class = "flexbox">
+
             <div id = "titulo"> <h1 class = "header">Sempre à frente do tempo</h1></div>
+
             <div id = "subtitulo">
                 <p class = paragraph>
                     Somos uma empresa que ajuda pessoas e empresas que precisam, gostam ou desejam possuir um animal pré-histórico a realizar seus sonhos!
@@ -131,22 +30,45 @@
                     em filmes como Kink Kong e a franquia mundialmente conhecida Jurassic Park. Agora, você também pode adquirir o seu próprio ser pré-histórico e fazer parte da história!  
                 </p>
             </div>
-            <div class = "item"> <img class = "produtos" src="Braquiossauro.png" alt="Ovo de braquiossauro"></div>
-            <div class = "item"> <img class = "produtos" src="Velociraptor.png" alt="Ovo de braquiossauro"></div>
-            <div class = "item"> <img class = "produtos" src="Tricerátops.png" alt="Ovo de braquiossauro"></div>
-            <div class = "desc"> 
-                <h3 class = "hdesc">Braquiossauro</h3>
-                <p class = "pdesc">Herbívoro, Comprimento: 18-22m, Período: Jurássico Superior, Localização: EUA</p>
+
+            <div class = "item"> 
+                <img class = "produtos" src="Braquiossauro.png" alt="Ovo de braquiossauro">
             </div>
-            <div class = "desc"> 
-                <h3 class = "hdesc">Velociraptor</h3>
-                <p class = "pdesc">Carnívoro, Comprimento: 1,5-2m, Período: Cretáceo Superior, Localização: Mongólia</p>
+
+            <div class = "item"> 
+                <img class = "produtos" src="Velociraptor.png" alt="Ovo de braquiossauro">
             </div>
-            <div class = "desc"> 
-                <h3 class = "hdesc">Tricerátops</h3>
-                <p class = "pdesc">Herbívoro, Comprimento: 7,9-9m, Período: Cretáceo Superior, Localização: EUA e Canadá</p>
-            </div>            
+
+            <div class = "item"> 
+                <img class = "produtos" src="Tricerátops.png" alt="Ovo de braquiossauro">
+            </div>
+
+            <div class = "box">
+                <div class = "desc"> 
+                    <h3 class = "hdesc">Braquiossauro - $10.000</h3>
+                    <p class = "pdesc">Herbívoro, Comprimento: 18-22m, Período: Jurássico Superior, Localização: EUA</p>
+                    <button type="button">Comprar</button>
+                </div>
+            </div>
+
+            <div class = "box">
+                <div class = "desc"> 
+                    <h3 class = "hdesc">Velociraptor - $20.000</h3>
+                    <p class = "pdesc">Carnívoro, Comprimento: 1,5-2m, Período: Cretáceo Superior, Localização: Mongólia</p>
+                    <button type="button">Comprar</button>
+                </div>
+            </div>
+
+            <div class = "box">
+                <div class = "desc"> 
+                    <h3 class = "hdesc">Tricerátops - $8.000</h3>
+                    <p class = "pdesc">Herbívoro, Comprimento: 7,9-9m, Período: Cretáceo Superior, Localização: EUA e Canadá</p>
+                    <button type="button">Comprar</button>
+                </div>
+            </div>          
         </div>
         
+    <script src="./assets/js/index.js"></script>
+
     </body>
 </html>
